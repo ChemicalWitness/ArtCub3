@@ -1,0 +1,47 @@
+mixin news
+  section.news
+    .container
+      .news__wrapper
+        .news__inner-wrapper
+          .news__title-wrapper
+            h2.news__title
+              | Новости
+          .news__description
+            p.news__description-text
+              |  Здесь представлены актуальные новости и события!
+        div(class="news__slider")
+          div(class='news__slider-wrapper swiper-wrapper')
+            div(class='news__slide swiper-slide')
+              .news__slide-image
+                img(width='550', height='100%', src='/img/content/slide-1-news.png', alt='Изображение проекта')
+                img(width='300', height='100%', src='/img/content/slide-1.1-news.png', alt='Изображение проекта')
+              .news__slide-description
+                h4.news__slide-title
+                  |  Заголовок Новости
+                p.news__slide-text
+                  |  Описание Новости
+                p.news__slide-date
+                  |  Дата Новости
+                button.news__slide-btn
+                  |  Подробнее
+            div(class='news__slide swiper-slide')
+              .news__slide-image
+                img(width='550', height='100%', src='/img/content/slide-1-news.png', alt='Изображение проекта')
+                img(width='300', height='100%', src='/img/content/slide-1.1-news.png', alt='Изображение проекта')
+              .news__slide-description
+                h4.news__slide-title
+                  |  Заголовок Новости2
+                p.news__slide-text
+                  |  Описание Новости2
+                p.news__slide-date
+                  |  Дата Новости2
+                button.news__slide-btn
+                  |  Подробнее
+
+          div(class='news__slider-btn-prev swiper-button-prev')
+            svg(width='100', height='50', aria-hidden="true")
+              use(xlink:href="img/sprite.svg#arrow-btn")
+          div(class='news__slider-btn-next swiper-button-next')
+            svg(width='100', height='50', aria-hidden="true")
+              use(xlink:href="img/sprite.svg#arrow-btn")
+

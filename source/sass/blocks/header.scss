@@ -1,7 +1,8 @@
 .header {
-  padding: 28px 0;
+  padding: 68px 0 0 0;
+  margin-bottom: 122px;
 
-  background-color: $color-neon-blue;
+  background-color: $color-default-white;
 
   .container {
     display: flex;
@@ -10,4 +11,143 @@
   &__logo {
     color: $color-default-white;
   }
+
+  @include vp-767 {
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.header__logo img {
+  @include vp-767 {
+    width: 75px;
+  }
+}
+
+.header__nav {
+  display: flex;
+  padding: 0 112px;
+  gap: 74px;
+  align-items: center;
+
+  @include vp-1023 {
+    padding: 0;
+    gap: 35px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.header__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+
+  @include vp-1023 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.header__nav-list.is-opened {
+  @include vp-767 {
+    display: flex;
+    gap: 0;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    background-color: $color-default-white;
+    z-index: 2;
+  }
+}
+
+.header__nav-item:not(:last-child) {
+  @include vp-767 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px #E64175 solid;
+  }
+}
+
+.header__nav-item:first-child {
+  @include vp-767 {
+    border-top: 1px #E64175 solid;
+  }
+}
+
+.header__nav-list.is-opened ~ .header__nav-btn {
+  @include vp-767 {
+    transform: rotate(45deg);
+  }
+}
+
+.header__nav-list.is-opened ~ .header__nav-btn::before {
+  @include vp-767 {
+    transform: rotate(90deg);
+    top: 0;
+  }
+}
+
+.header__nav-list.is-opened ~ .header__nav-btn::after {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.header__nav-link {
+  font-family: "Alumni-Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+  }
+}
+
+.header__nav-btn {
+  position: relative;
+  display: none;
+  width: 40px;
+  height: 4px;
+  border: none;
+  background-color: #E64175;
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.header__nav-btn::before {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 4px;
+  background-color: #E64175;
+  top: 10px;
+  left: 0;
+}
+
+.header__nav-btn::after {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 4px;
+  background-color: #E64175;
+  bottom: 10px;
+  left: 0;
 }

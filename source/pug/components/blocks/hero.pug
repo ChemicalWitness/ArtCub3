@@ -1,0 +1,20 @@
+mixin hero
+  section.hero
+    .container
+      .hero-wrapper
+        .hero__img
+          img(width='658', height='440', src='./img/content/hero-img.png', alt='Промо-изображение')
+        .hero__title-wrapper
+          h1.hero__title
+            span Арт
+            span Куб
+        .hero__social-wrapper
+          ul.hero__social-list
+            li.hero__social-item
+              a(class='hero__social-link', href="#")
+                svg(width='62', height='62', aria-hidden="true")
+                  use(xlink:href="img/sprite.svg#wa")
+            li.hero__social-item
+              a(class='hero__social-link', href="")
+                svg(width='62', height='62', aria-hidden="true")
+                  use(xlink:href="img/sprite.svg#tg")

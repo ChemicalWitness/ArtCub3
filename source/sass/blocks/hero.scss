@@ -1,0 +1,161 @@
+.hero-wrapper {
+  position: relative;
+  margin-bottom: 259px;
+
+  @include vp-1023 {
+    margin-bottom: 160px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 80px;
+    padding-bottom: 250px;
+  }
+}
+
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  background-image: url('/img/svg/hero-deco.svg');
+  background-repeat: no-repeat;
+  top: -200px;
+  left: -80px;
+  width: 100%;
+  height: 100%;
+
+  @include vp-1023 {
+    transform: scale(0.6);
+    top: -100px;
+    left: -170px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__img img {
+  margin-left: 26%;
+
+  @include vp-1023 {
+    transform: scale(0.7);
+    margin-left: 5%;
+  }
+
+  @include vp-767 {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    // width: 100%;
+    height: auto;
+    min-height: 100%;
+    margin-left: -100px;
+    // min-width: 320px;
+    transform: scale(1);
+  }
+}
+
+.hero__img {
+  @include vp-767 {
+    position: relative;
+    height: 190px;
+    max-height: 190px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.hero__title-wrapper {
+  position: absolute;
+  right: -60px;
+  top: 219px;
+  background-color: #E64175;
+  max-width: 680px;
+  padding: 10px 40px 20px 40px;
+
+  @include vp-1023 {
+    max-width: 450px;
+    padding: 5px 20px 10px 20px;
+    top: 260px;
+    right: 0;
+  }
+
+  @include vp-767 {
+    max-width: 180px;
+    padding: 5px;
+    top: 280px;
+    right: -20px;
+  }
+}
+
+.hero__title {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: $color-default-white;
+  font-family: "Alumni-Sans", "Arial", sans-serif;
+  font-size: 370px;
+  line-height: 240px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @include vp-1023 {
+    font-size: 240px;
+    line-height: 160px;
+  }
+
+  @include vp-767 {
+    font-size: 96px;
+    line-height: 64px;
+  }
+}
+
+.hero__title span:last-child {
+  padding-left: 160px;
+
+  @include vp-1023 {
+    padding-left: 120px;
+  }
+
+  @include vp-767 {
+    padding-left: 40px;
+  }
+}
+
+.hero__social-wrapper {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__social-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+  margin-left: 113px;
+  list-style-type: none;
+  display: flex;
+  gap: 23px;
+
+  @include vp-1023 {
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+}
+
+.hero__social-list::after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 8px;
+  background-color: #000000;
+  top: 32px;
+  left: 18%;
+  z-index: -1;
+
+  @include vp-1023 {
+    width: 400px;
+    left: 25%;
+  }
+}

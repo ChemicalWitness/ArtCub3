@@ -3,6 +3,10 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {CustomSelect} from './modules/select/custom-select';
 import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
+import { initProjectsSlider } from './modules/init-projects-slider.js';
+import { initNewsSlider } from './modules/init-news-slider.js';
+import { initAccordions } from './modules/init-accordion.js';
+import { initHeaderMenu } from './modules/header-menu.js';
 
 // ---------------------------------
 
@@ -12,6 +16,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   mobileVhFix();
+  initProjectsSlider();
+  initNewsSlider();
+  initAccordions();
+  initHeaderMenu();
 
   // Modules
   // ---------------------------------

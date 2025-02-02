@@ -1,0 +1,68 @@
+mixin about
+  section.about
+    .container
+      .about__wrapper
+        .about__description
+          p.about__description-text
+            | «Арт-Куб» – это пространство, где рождаются идеи, вдохновение обретает форму, а творчество становится искусством.
+        .about__title-wrapper
+          h2.about__title
+            | О нас
+        h3.about__subtitle
+          | Наши области
+        .about__areas-wrapper
+          ul.about__areas-list(data-accordion="parent")
+            li.about__areas-item(data-accordion="element")
+              .about__areas-item-wrapper
+                h4.about__areas-title
+                  | Графический дизайн
+                button(class='about__areas-button', type='button', data-accordion="button")
+                  svg(width='90', height='90', aria-hidden="true")
+                    use(xlink:href="img/sprite.svg#arrow-areas")
+              p.about__areas-text(data-accordion="content")
+                | Описание
+
+            li.about__areas-item(data-accordion="element")
+              .about__areas-item-wrapper
+                h4.about__areas-title
+                  | Декоративно-прикладное искусство
+                button(class='about__areas-button', type='button', data-accordion="button")
+                  svg(width='90', height='90', aria-hidden="true")
+                    use(xlink:href="img/sprite.svg#arrow-areas")
+              p.about__areas-text(data-accordion="content")
+                | Описание
+            li.about__areas-item(data-accordion="element")
+              .about__areas-item-wrapper
+                h4.about__areas-title
+                  | Анимация
+                button(class='about__areas-button', type='button', data-accordion="button")
+                  svg(width='90', height='90', aria-hidden="true")
+                    use(xlink:href="img/sprite.svg#arrow-areas")
+              p.about__areas-text(data-accordion="content")
+                | Описание
+            li.about__areas-item(data-accordion="element")
+              .about__areas-item-wrapper
+                h4.about__areas-title
+                  | Изобразительное искусство
+                button(class='about__areas-button', type='button', data-accordion="button")
+                  svg(width='90', height='90', aria-hidden="true")
+                    use(xlink:href="img/sprite.svg#arrow-areas")
+              p.about__areas-text(data-accordion="content")
+                | Описание
+        .about__benefits-wrapper
+          h3.about__benefits-title
+            | Преимущества
+          .about__benefits-inner-wrapper
+            ul.about__benefits-list
+              li.about__benefits-item
+                p.about__benefits-text
+                  | Полный цикл разработки
+              li.about__benefits-item
+                p.about__benefits-text
+                  | Креативность
+              li.about__benefits-item
+                p.about__benefits-text
+                  | Профессионализм
+            svg(width='742', height='70', aria-hidden="true")
+                  use(xlink:href="img/sprite.svg#line")
+

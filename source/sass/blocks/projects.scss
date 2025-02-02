@@ -1,0 +1,137 @@
+.projects__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.projects__wrapper::after {
+  position: absolute;
+  content: "";
+  background-image: url('/img/sprite/deco-icon.svg');
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 1000px;
+  right: -400px;
+  top: 400px;
+  z-index: -1;
+
+  @include vp-1023 {
+    transform: scale(0.6);
+    top: 0;
+  }
+}
+
+.projects__title-wrapper {
+  align-self: flex-end;
+  max-width: 1024px;
+  padding: 20px 0;
+  background-color: #E64175;
+  margin-right: -60px;
+  margin-bottom: 30px;
+
+  @include vp-1023 {
+    max-width: 700px;
+  }
+}
+
+.projects__title {
+  margin: 0;
+  padding-right: 60px;
+  padding-left: 20px;
+  font-size: 300px;
+  line-height: 240px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $color-default-white;
+
+  @include vp-1023 {
+    font-size: 200px;
+    line-height: 160px;
+  }
+}
+
+.projects__text-wrapper {
+  margin-bottom: 40px;
+}
+
+.projects__text {
+  position: relative;
+  margin: 0;
+  padding-left: 132px;
+  max-width: 470px;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 600;
+
+  @include vp-1023 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.projects__text::after {
+  position: absolute;
+  content: "2.";
+  font-size: 200px;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #E64175;
+
+  @include vp-1023 {
+    font-size: 150px;
+    left: 30px;
+  }
+}
+
+.projects__slider-btn-prev svg {
+  transform: rotate(180deg);
+  position: absolute;
+  top: 150px;
+  left: -700px;
+  width: 100%;
+  height: 50px;
+
+  @include vp-1023 {
+    left: -360px;
+    top: 100px;
+  }
+}
+
+.projects__slider-btn-next svg {
+  position: absolute;
+  top: 150px;
+  right: -700px;
+  width: 100%;
+  height: 50px;
+
+  @include vp-1023 {
+    right: -360px;
+    top: 100px;
+  }
+}
+
+.projects__slide img {
+  @include vp-1023 {
+    width: 339px;
+  }
+}
+
+.projects__slider {
+  position: relative;
+  width: 100%;
+  margin-bottom: 180px;
+
+  @include vp-1023 {
+    margin-bottom: 80px;
+  }
+}
+
+.projects__slider-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

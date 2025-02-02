@@ -119,6 +119,14 @@
   }
 }
 
+.header__nav-link:hover {
+  opacity: 0.6;
+}
+
+.header__nav-link:active {
+  opacity: 0.3;
+}
+
 .header__nav-btn {
   position: relative;
   display: none;
@@ -150,4 +158,12 @@
   background-color: #E64175;
   bottom: 10px;
   left: 0;
+}
+
+.hero__social-link:hover {
+  opacity: 0.6;
+}
+
+.hero__social-link:active {
+  opacity: 0.3;
 }

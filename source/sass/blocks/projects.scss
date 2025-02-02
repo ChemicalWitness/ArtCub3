@@ -86,6 +86,19 @@
   }
 }
 
+.projects__slider-btn-next:hover {
+  opacity: 0.6;
+}
+
+.projects__slider-btn-prev:hover {
+  opacity: 0.6;
+}
+
+.projects__slider-btn-next:active svg {
+  fill: #455BA6;
+}
+
+
 .projects__slider-btn-prev svg {
   transform: rotate(180deg);
   position: absolute;

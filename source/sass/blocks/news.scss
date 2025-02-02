@@ -185,6 +185,15 @@
   padding: 5px 60px;
 }
 
+.news__slide-btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.news__slide-btn:active {
+  background-color: #455BA6;
+}
+
 .news__slider-btn-prev {
   transform: rotate(180deg);
   position: absolute;
@@ -195,6 +204,16 @@
     top: 100px;
     left: -60px;
   }
+}
+
+.news__slider-btn-prev:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.news__slider-btn-next:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 .news__slider-btn-next {
